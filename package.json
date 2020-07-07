@@ -1,8 +1,7 @@
 {
-	"name": "MEAN",
+	"name": "mean-passport",
 	"version": "0.0.7",
-	"scripts": {
-	},
+	"scripts": {},
 	"dependencies": {
 		"bluebird": "^3.5.3",
 		"body-parser": "^1.18.3",
@@ -25,7 +24,5 @@
 		"systemjs": "0.19.39",
 		"zone.js": "0.6.26"
 	},
-	"devDependencies": {
-	}
+	"devDependencies": {}
 }
-
