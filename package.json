@@ -1,6 +1,12 @@
 {
-    "name": "mean-passport",
-    "version": "0.0.7",
+    "name": "angular-passport-authentication",
+    "version": "0.0.1",
+    "description": "",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/rbiesser/angular-passport-authentication.git"
+    },
+    "license": "MIT",
     "scripts": {
         "tsc": "tsc",
         "tsc:w": "tsc -w",
