@@ -1,18 +1,39 @@
-# Unit 2: Integrate Mongoose into MEAN
+# Angular Passport Authentication
 
-## `docker run -p 27017:27017 --name mongo mongo`
-- Run MongoDB in a Docker container
+## Run with Docker
+- Set NODE_ENV in `docker-compose.yml`.
 
-## `npm install`
-- Install dependencies
+```bash
+docker-compose up --build
+```
+- A sandboxed environment with server running at http://localhost/
+- The `--build` flag is optional to cause a rebuild of the image
 
-## `npm start`
-- Start node server
+## Run local
+```bash
+docker run -p 27017:27017 --name mongo mongo
+```
+- You at least need to have MongoDB running on the localhost.
+- Change the db connection string to use localhost in `./app/config/env`
 
-## Tests
-- Server is available for api calls on the localhost.
-- Install REST Client extension for VSCode.
-- Use the requests in '/test' to test the api.
+```bash
+npm install
+```
+- Install dependencies to `node_modules`
+
+```bash
+npm start
+```
+- Configures `typings` and compiles TypeScript in `public/app`.
+- Start node server running at http://localhost:3000/
+
+## Cleanup development files
+```bash
+git clean -xdf
+```
+- Removes untracked and ignored files and folders.
+- Use `-X` flag instead of `-x` to only remove tracked files.
+- Use `--dry-run` to preview the results.
 
 ## Logon to mongo container
 
