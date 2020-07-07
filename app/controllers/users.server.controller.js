@@ -126,25 +126,3 @@ exports.signout = function (req, res) {
     // Redirect the user back to the main application page
     res.redirect('/');
 };
-
-exports.renderSignin = function(req, res, next) {
-    if (!req.user) {
-      res.render('signin', {
-        title: 'Sign-in Form',
-        messages: req.flash('error') || req.flash('info')
-      });
-    } else {
-      return res.redirect('/');
-    }
-  };
-  
-  exports.renderSignup = function(req, res, next) {
-    if (!req.user) {
-      res.render('signup', {
-        title: 'Sign-up Form',
-        messages: req.flash('error')
-      });
-    } else {
-      return res.redirect('/');
-    }
-  };

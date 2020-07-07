@@ -11,8 +11,8 @@ export class SignupComponent {
   errorMessage: string;
   user: any = {};
 
-  constructor(private _authenticationService: AuthenticationService,
-    private _router: Router) { }
+  constructor(private _authenticationService: AuthenticationService
+    , private _router: Router) { }
 
   signup() {
     this._authenticationService.signup(this.user)
