@@ -1,4 +1,4 @@
-System.register(['@angular/core'], function(exports_1, context_1) {
+System.register(['@angular/core'], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,11 +13,11 @@ System.register(['@angular/core'], function(exports_1, context_1) {
     var core_1;
     var AuthenticationComponent;
     return {
-        setters:[
+        setters: [
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
-        execute: function() {
+        execute: function () {
             AuthenticationComponent = (function () {
                 function AuthenticationComponent() {
                 }
@@ -25,7 +25,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'authentication',
                         templateUrl: 'app/authentication/authentication.template.html',
-                    }), 
+                    }),
                     __metadata('design:paramtypes', [])
                 ], AuthenticationComponent);
                 return AuthenticationComponent;

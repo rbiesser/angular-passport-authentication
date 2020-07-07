@@ -6,6 +6,6 @@ import { SignupComponent } from './signup/signup.component';
   selector: 'authentication',
   templateUrl: 'app/authentication/authentication.template.html',
 })
-export class AuthenticationComponent { 
-	
+export class AuthenticationComponent {
+
 }

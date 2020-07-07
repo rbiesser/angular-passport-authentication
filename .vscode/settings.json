@@ -1,0 +1,9 @@
+{
+    "editor.detectIndentation": false,
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    }
+}

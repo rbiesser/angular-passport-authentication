@@ -1,4 +1,4 @@
-System.register(['rxjs/Rx', '@angular/core', '@angular/http', 'rxjs/Observable'], function(exports_1, context_1) {
+System.register(['rxjs/Rx', '@angular/core', '@angular/http', 'rxjs/Observable'], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,8 +13,8 @@ System.register(['rxjs/Rx', '@angular/core', '@angular/http', 'rxjs/Observable']
     var core_1, http_1, Observable_1;
     var AuthenticationService;
     return {
-        setters:[
-            function (_1) {},
+        setters: [
+            function (_1) { },
             function (core_1_1) {
                 core_1 = core_1_1;
             },
@@ -24,7 +24,7 @@ System.register(['rxjs/Rx', '@angular/core', '@angular/http', 'rxjs/Observable']
             function (Observable_1_1) {
                 Observable_1 = Observable_1_1;
             }],
-        execute: function() {
+        execute: function () {
             AuthenticationService = (function () {
                 function AuthenticationService(http) {
                     this.http = http;
@@ -58,7 +58,7 @@ System.register(['rxjs/Rx', '@angular/core', '@angular/http', 'rxjs/Observable']
                     return Observable_1.Observable.throw(error.json().message || 'Server error');
                 };
                 AuthenticationService = __decorate([
-                    core_1.Injectable(), 
+                    core_1.Injectable(),
                     __metadata('design:paramtypes', [http_1.Http])
                 ], AuthenticationService);
                 return AuthenticationService;

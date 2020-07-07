@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/router', '../authentication.service'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router', '../authentication.service'], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,7 +13,7 @@ System.register(['@angular/core', '@angular/router', '../authentication.service'
     var core_1, router_1, authentication_service_1;
     var SignupComponent;
     return {
-        setters:[
+        setters: [
             function (core_1_1) {
                 core_1 = core_1_1;
             },
@@ -23,7 +23,7 @@ System.register(['@angular/core', '@angular/router', '../authentication.service'
             function (authentication_service_1_1) {
                 authentication_service_1 = authentication_service_1_1;
             }],
-        execute: function() {
+        execute: function () {
             SignupComponent = (function () {
                 function SignupComponent(_authenticationService, _router) {
                     this._authenticationService = _authenticationService;
@@ -39,7 +39,7 @@ System.register(['@angular/core', '@angular/router', '../authentication.service'
                     core_1.Component({
                         selector: 'signup',
                         templateUrl: 'app/authentication/signup/signup.template.html'
-                    }), 
+                    }),
                     __metadata('design:paramtypes', [authentication_service_1.AuthenticationService, router_1.Router])
                 ], SignupComponent);
                 return SignupComponent;

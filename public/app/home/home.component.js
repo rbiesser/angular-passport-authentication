@@ -1,4 +1,4 @@
-System.register(['@angular/core', '../authentication/authentication.service'], function(exports_1, context_1) {
+System.register(['@angular/core', '../authentication/authentication.service'], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,14 +13,14 @@ System.register(['@angular/core', '../authentication/authentication.service'], f
     var core_1, authentication_service_1;
     var HomeComponent;
     return {
-        setters:[
+        setters: [
             function (core_1_1) {
                 core_1 = core_1_1;
             },
             function (authentication_service_1_1) {
                 authentication_service_1 = authentication_service_1_1;
             }],
-        execute: function() {
+        execute: function () {
             HomeComponent = (function () {
                 function HomeComponent(_authenticationService) {
                     this._authenticationService = _authenticationService;
@@ -30,7 +30,7 @@ System.register(['@angular/core', '../authentication/authentication.service'], f
                     core_1.Component({
                         selector: 'home',
                         templateUrl: './app/home/home.template.html'
-                    }), 
+                    }),
                     __metadata('design:paramtypes', [authentication_service_1.AuthenticationService])
                 ], HomeComponent);
                 return HomeComponent;

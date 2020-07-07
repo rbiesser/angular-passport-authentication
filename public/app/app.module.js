@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', '@angular/forms', '@angular/router', '@angular/http', './app.component', './app.routes', './home/home.module', './authentication/authentication.service', './authentication/authentication.module'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', '@angular/forms', '@angular/router', '@angular/http', './app.component', './app.routes', './home/home.module', './authentication/authentication.service', './authentication/authentication.module'], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,7 +13,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
     var core_1, platform_browser_1, forms_1, router_1, http_1, app_component_1, app_routes_1, home_module_1, authentication_service_1, authentication_module_1;
     var AppModule;
     return {
-        setters:[
+        setters: [
             function (core_1_1) {
                 core_1 = core_1_1;
             },
@@ -44,7 +44,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
             function (authentication_module_1_1) {
                 authentication_module_1 = authentication_module_1_1;
             }],
-        execute: function() {
+        execute: function () {
             AppModule = (function () {
                 function AppModule() {
                 }
@@ -65,7 +65,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
                             authentication_service_1.AuthenticationService
                         ],
                         bootstrap: [app_component_1.AppComponent]
-                    }), 
+                    }),
                     __metadata('design:paramtypes', [])
                 ], AppModule);
                 return AppModule;

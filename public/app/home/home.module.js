@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular/router', './home.routes', './home.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular/router', './home.routes', './home.component'], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,7 +13,7 @@ System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular
     var core_1, common_1, forms_1, router_1, home_routes_1, home_component_1;
     var HomeModule;
     return {
-        setters:[
+        setters: [
             function (core_1_1) {
                 core_1 = core_1_1;
             },
@@ -32,7 +32,7 @@ System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular
             function (home_component_1_1) {
                 home_component_1 = home_component_1_1;
             }],
-        execute: function() {
+        execute: function () {
             HomeModule = (function () {
                 function HomeModule() {
                 }
@@ -46,7 +46,7 @@ System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular
                         declarations: [
                             home_component_1.HomeComponent,
                         ]
-                    }), 
+                    }),
                     __metadata('design:paramtypes', [])
                 ], HomeModule);
                 return HomeModule;
