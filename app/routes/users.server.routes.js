@@ -4,38 +4,9 @@ const passport = require('passport');
 
 // Define the routes module' method
 module.exports = function (app) {
-    app.route('/signup')
-        .get(users.renderSignup)
-        .post(users.signup);
-
-    app.route('/signin')
-        .get(users.renderSignin)
-        .post(passport.authenticate('local', {
-            successRedirect: '/',
-            failureRedirect: '/signin',
-            failureFlash: true
-        }));
-
-    app.get('/signout', users.signout);
-
-    // Set up the 'signup' routes 
-    app.route('/api/auth/signup')
-        .get(users.renderSignup)
-        .post(users.signup);
-
-    // Set up the 'signin' routes 
-    app.route('/api/auth/signin')
-        .get(users.renderSignin)
-        .post(passport.authenticate('local', {
-            successRedirect: '/',
-            failureRedirect: '/signin',
-            failureFlash: true
-        }));
-    // .post(users.signin);
-
-    // Set up the 'signout' route
-    app.route('/api/auth/signout')
-        .get(users.signout);
+    app.route('/api/auth/signup').post(users.signup);
+    app.route('/api/auth/signin').post(users.signin);
+    app.route('/api/auth/signout').get(users.signout);
 
     // Set up the Facebook OAuth routes 
     app.get('/oauth/facebook', passport.authenticate('facebook', {
