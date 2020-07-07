@@ -1,1 +1,5 @@
 node_modules
+
+# Ignores compiled TypeScript files
+public/app/**/*.map
+public/app/**/*.js
