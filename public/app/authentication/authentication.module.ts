@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+// CommonModule is added
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
